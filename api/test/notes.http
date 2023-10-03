@@ -1,0 +1,13 @@
+http://localhost:12345/api/notes/get/kenny 
+
+####
+
+POST http://localhost:12345/api/notes/search HTTP/1.1
+content-type: application/json
+Accept: application/json
+
+{
+    "body": "2023Q4",
+    "dateStart": "2023-01-01",
+    "dateEnd": "2023-08-31" 
+}

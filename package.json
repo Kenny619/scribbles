@@ -1,0 +1,39 @@
+{
+	"name": "scribbles",
+	"version": "0.0.1",
+	"description": "Scribbles app",
+	"main": "index.js",
+	"module": "module",
+	"directories": {
+		"lib": "lib"
+	},
+	"scripts": {
+		"test": "vitest",
+		"prebuild": "rimraf dist",
+		"build": "tsc --project tsconfig.json && tsc-alias -p tsconfig.json",
+		"postbuild": "npm run test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Kenny619/scribbles.git"
+	},
+	"author": "",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Kenny619/scribbles/issues"
+	},
+	"homepage": "https://github.com/Kenny619/scribbles#readme",
+	"dependencies": {
+		"fs": "^0.0.1-security",
+		"highlight.js": "^11.9.0",
+		"quill": "^2.0.0-rc.2"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.5.3",
+		"rimraf": "^5.0.5",
+		"tsc-alias": "^1.8.8",
+		"vite": "^5.1.3",
+		"vite-tsconfig-paths": "^4.3.1",
+		"vitest": "^1.3.0"
+	}
+}

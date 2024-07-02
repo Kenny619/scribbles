@@ -1,5 +1,12 @@
-import React from "react";
 import { Textarea } from "@/components/ui/textarea";
+//integrate Quill to the Textarea component
+import EditorJS from "@editorjs/editorjs";
+import { useEffect } from "react";
+
+// useEffect(() => {
+// 	const quill = new Quill("#note", {});
+// }, []);
+
 export const Note = () => {
 	return (
 		<div className="w-full h-full p-2">
